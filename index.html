@@ -1,82 +1,49 @@
-Html Webpack Plugin:
-<pre>
-  Error: Child compilation failed:
-  Module build failed (from ./node_modules/pug-html-loader/lib/index.js):
-  Error: ENOENT: no such file or directory, open 'c:\mywebsite\src\index.pug':
-  Error: ENOENT: no such file or directory, open 'c:\mywebsite\src\index.pug'
-  
-  - compiler.js:79 childCompiler.runAsChild
-    [mywebsite]/[html-webpack-plugin]/lib/compiler.js:79:16
-  
-  - Compiler.js:306 compile
-    [mywebsite]/[webpack]/lib/Compiler.js:306:11
-  
-  - Compiler.js:631 hooks.afterCompile.callAsync.err
-    [mywebsite]/[webpack]/lib/Compiler.js:631:15
-  
-  
-  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
-    [mywebsite]/[tapable]/lib/Hook.js:154:20
-  
-  - Compiler.js:628 compilation.seal.err
-    [mywebsite]/[webpack]/lib/Compiler.js:628:31
-  
-  
-  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
-    [mywebsite]/[tapable]/lib/Hook.js:154:20
-  
-  - Compilation.js:1329 hooks.optimizeAssets.callAsync.err
-    [mywebsite]/[webpack]/lib/Compilation.js:1329:35
-  
-  
-  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
-    [mywebsite]/[tapable]/lib/Hook.js:154:20
-  
-  - Compilation.js:1320 hooks.optimizeChunkAssets.callAsync.err
-    [mywebsite]/[webpack]/lib/Compilation.js:1320:32
-  
-  
-  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
-    [mywebsite]/[tapable]/lib/Hook.js:154:20
-  
-  - Compilation.js:1315 hooks.additionalAssets.callAsync.err
-    [mywebsite]/[webpack]/lib/Compilation.js:1315:36
-  
-  
-  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
-    [mywebsite]/[tapable]/lib/Hook.js:154:20
-  
-  - Compilation.js:1311 hooks.optimizeTree.callAsync.err
-    [mywebsite]/[webpack]/lib/Compilation.js:1311:32
-  
-  
-  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
-    [mywebsite]/[tapable]/lib/Hook.js:154:20
-  
-  - Compilation.js:1248 Compilation.seal
-    [mywebsite]/[webpack]/lib/Compilation.js:1248:27
-  
-  - Compiler.js:625 compilation.finish.err
-    [mywebsite]/[webpack]/lib/Compiler.js:625:18
-  
-  - Compilation.js:1171 hooks.finishModules.callAsync.err
-    [mywebsite]/[webpack]/lib/Compilation.js:1171:4
-  
-  
-  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
-    [mywebsite]/[tapable]/lib/Hook.js:154:20
-  
-  - Compilation.js:1163 Compilation.finish
-    [mywebsite]/[webpack]/lib/Compilation.js:1163:28
-  
-  - Compiler.js:622 hooks.make.callAsync.err
-    [mywebsite]/[webpack]/lib/Compiler.js:622:17
-  
-  
-  - Compilation.js:1095 _addModuleChain
-    [mywebsite]/[webpack]/lib/Compilation.js:1095:12
-  
-  - Compilation.js:1007 processModuleDependencies.err
-    [mywebsite]/[webpack]/lib/Compilation.js:1007:9
-  
-</pre><script type="text/javascript" src="bundle.js"></script>
+<!DOCTYPE html><meta name="viewport" content="width=device-width, initial-scale=1.0"><style>@import url('https://fonts.googleapis.com/css?family=Orbitron|Roboto');
+
+body {
+  color:#ddd;
+  text-align:center;
+}
+
+#timer{
+  width:36vw;
+  height:18vw;
+  padding:2vw;
+  border-radius:0.5vw;
+  background-color:#111;
+}
+
+#year,#today{
+  font-family: 'Roboto Light', sans-serif;
+  display:grid;
+  grid-template-columns:36vw;
+  grid-template-rows:2vw;
+  font-size:2vw;
+  margin-bottom:1vw;
+}
+
+#clock,#desc{
+  font-family: 'Orbitron', sans-serif;
+  display:grid;
+  grid-template-columns:12vw 12vw 12vw;
+  grid-template-rows:3vw 3vw;
+  font-size:2vw;
+}
+#clock{
+  margin-top:2vw;
+  color:OrangeRed;
+  font-weight:bold;
+  font-size:6vw;
+}
+
+#desc{
+margin-top:3vw;
+margin-left:-2vw;
+padding-top:1vw;
+height:4.05vw;
+width:111.1%;
+border-radius:0 0 0.5vw 0.5vw;
+background-color:OrangeRed;
+color:#ddd;
+text-align:right;
+}</style><html><head><title>WebDevsign. Because you can't tell the difference nowadays.</title></head><body><div id="timer"><div id="year"></div><div id="today"></div><div id="clock"><div id="hours"></div><div id="minutes"></div><div id="seconds"></div></div><div id="desc"><div id="hourdesc"></div><div id="minutedesc"></div><div id="seconddesc"></div></div></div><script type="text/javascript" src="../src/clock/clock.js"></script><script type="text/javascript" src="bundle.js"></script></body></html>

@@ -1,1 +1,135 @@
-<!DOCTYPE html><meta name="viewport" content="width=device-width, initial-scale=1.0"><style></style><html><head><title>WebDevsign. Because you can't tell the difference nowadays.</title></head><body><script type="text/javascript" src="bundle.js"></script></body></html>
+Html Webpack Plugin:
+<pre>
+  Error: Child compilation failed:
+  Module build failed (from ./node_modules/pug-html-loader/lib/index.js):
+  Error: ENOENT: no such file or directory, open 'c:\mywebsite\src\clock\clock.scss'
+  
+  
+  - index.js:69 Function.read
+    [mywebsite]/[pug-load]/index.js:69:13
+  
+  - index.js:146 Object.read
+    [mywebsite]/[pug]/lib/index.js:146:25
+  
+  - index.js:24 
+    [mywebsite]/[pug-load]/index.js:24:25
+  
+  - index.js:23 walkAST
+    [mywebsite]/[pug-walk]/index.js:23:18
+  
+  - index.js:104 
+    [mywebsite]/[pug-walk]/index.js:104:20
+  
+  - Array.reduce
+  
+  - index.js:103 walkAndMergeNodes
+    [mywebsite]/[pug-walk]/index.js:103:18
+  
+  - index.js:37 walkAST
+    [mywebsite]/[pug-walk]/index.js:37:19
+  
+  - index.js:48 walkAST
+    [mywebsite]/[pug-walk]/index.js:48:21
+  
+  - index.js:104 
+    [mywebsite]/[pug-walk]/index.js:104:20
+  
+  - Array.reduce
+  
+  - index.js:103 walkAndMergeNodes
+    [mywebsite]/[pug-walk]/index.js:103:18
+  
+  - index.js:37 walkAST
+    [mywebsite]/[pug-walk]/index.js:37:19
+  
+  - index.js:13 load
+    [mywebsite]/[pug-load]/index.js:13:10
+  
+  - index.js:46 Function.loadString [as string]
+    [mywebsite]/[pug-load]/index.js:46:10
+  
+  - index.js:86 compileBody
+    [mywebsite]/[pug]/lib/index.js:86:18
+  
+  - index.js:242 Object.exports.compile
+    [mywebsite]/[pug]/lib/index.js:242:16
+  
+  
+  - Error: ENOENT: no such file or directory, open 'c:\mywebsite\src\clock\clock.scss'
+  
+  
+  - compiler.js:79 childCompiler.runAsChild
+    [mywebsite]/[html-webpack-plugin]/lib/compiler.js:79:16
+  
+  - Compiler.js:306 compile
+    [mywebsite]/[webpack]/lib/Compiler.js:306:11
+  
+  - Compiler.js:631 hooks.afterCompile.callAsync.err
+    [mywebsite]/[webpack]/lib/Compiler.js:631:15
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [mywebsite]/[tapable]/lib/Hook.js:154:20
+  
+  - Compiler.js:628 compilation.seal.err
+    [mywebsite]/[webpack]/lib/Compiler.js:628:31
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [mywebsite]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1329 hooks.optimizeAssets.callAsync.err
+    [mywebsite]/[webpack]/lib/Compilation.js:1329:35
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [mywebsite]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1320 hooks.optimizeChunkAssets.callAsync.err
+    [mywebsite]/[webpack]/lib/Compilation.js:1320:32
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [mywebsite]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1315 hooks.additionalAssets.callAsync.err
+    [mywebsite]/[webpack]/lib/Compilation.js:1315:36
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [mywebsite]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1311 hooks.optimizeTree.callAsync.err
+    [mywebsite]/[webpack]/lib/Compilation.js:1311:32
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [mywebsite]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1248 Compilation.seal
+    [mywebsite]/[webpack]/lib/Compilation.js:1248:27
+  
+  - Compiler.js:625 compilation.finish.err
+    [mywebsite]/[webpack]/lib/Compiler.js:625:18
+  
+  - Compilation.js:1171 hooks.finishModules.callAsync.err
+    [mywebsite]/[webpack]/lib/Compilation.js:1171:4
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [mywebsite]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1163 Compilation.finish
+    [mywebsite]/[webpack]/lib/Compilation.js:1163:28
+  
+  - Compiler.js:622 hooks.make.callAsync.err
+    [mywebsite]/[webpack]/lib/Compiler.js:622:17
+  
+  
+  - Compilation.js:1095 _addModuleChain
+    [mywebsite]/[webpack]/lib/Compilation.js:1095:12
+  
+  - Compilation.js:1007 processModuleDependencies.err
+    [mywebsite]/[webpack]/lib/Compilation.js:1007:9
+  
+</pre><script type="text/javascript" src="bundle.js"></script>

@@ -14,27 +14,21 @@ module.exports = {
 		test: /\.pug$/,
 		use: ['html-loader?attrs=false', 'pug-html-loader']
       },
-	  {
+      {
         test: /\.scss$/,
-        use: [
-            { loader: "style-loader"}, 
-            { loader: "css-loader" },
-            { loader: 'postcss-loader',
-                options: {
-                    plugins: () => [require('autoprefixer')]
-                }
-            },
-            { loader: "sass-loader" }
-        ]
-	  },
+        use: [{
+          loader: 'style-loader'
+        }, {
+          loader: 'css-loader'
+        }, {
+          loader: 'sass-loader'
+        }]
+      },
       {
         test: /\.js$/,
         exclude: /(node_modules|bower_components)/,
         use: {
-          loader: 'babel-loader',
-		  options: {
-            presets: ['@babel/preset-env']
-          }
+          loader: 'babel-loader'
         }
       },
       {
@@ -48,7 +42,7 @@ module.exports = {
         test: /\.(woff|ttf|svg)$/,
         exclude: [/images/],
         use:{
-          loader:'file-loader',
+          loader:'file-loader'
         }
       }
 	]

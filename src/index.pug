@@ -1,8 +1,12 @@
 doctype html
 meta(name="viewport",content="width=device-width, initial-scale=1.0")
 style
+  include clock/clock.scss
 html
   head
     title WebDevsign. Because you can't tell the difference nowadays.
   body
+    include clock/clock.pug
+    script(type="text/javascript" src="../src/clock/clock.js")
+    
     
